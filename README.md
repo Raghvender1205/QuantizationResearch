@@ -15,3 +15,19 @@ To run this use `minmax_quantize.py` script
 python minmax_quantize.py
 ```
 This script loads the `VisionTransformer` model and determines the range of weights and activations using `MinMax Scaling`. It then quantizes the weights and activations to `8 bits` and then saves the trained model.
+
+1. Download Dataset manually if you want using `wget`
+```
+wget https://image-net.org/data/ILSVRC/2012/ILSVRC2012_devkit_t12.tar.gz
+```
+
+```
+wget https://image-net.org/data/ILSVRC/2012/ILSVRC2012_img_train.tar
+```
+```
+wget https://image-net.org/data/ILSVRC/2012/ILSVRC2012_img_val.tar
+```
+
+2. Run the script `main.py` or use this `Kaggle Notebook`.
+
+https://www.kaggle.com/code/raghvender/minmax-scaling-quantization-on-vit/notebook
